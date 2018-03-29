@@ -3,7 +3,6 @@ package assignment1;
 import static org.junit.Assert.*;
 
 import java.util.ArrayList;
-import java.util.EmptyStackException;
 
 import org.junit.Before;
 import org.junit.Test;
