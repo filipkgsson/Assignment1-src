@@ -13,16 +13,7 @@ public class Main {
 		System.out.println(a.multiply(b).toString());
 		*/
 		
-		StackDemo stack = new StackDemo();
-		
-		stack.Push(5,6,1);
-		
-		try {
-			System.out.println(stack.Pop(3).toString());
-		} catch (Exception e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+	
 	}
 
 }
