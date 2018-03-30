@@ -16,7 +16,7 @@ public class StackDemo extends Stack<Integer> {
 	}
 
 	public ArrayList<Integer> pop(int n) {
-		assert this.size() > 0;
+		assert this.size() >= n;
 		ArrayList<Integer> list = new ArrayList<Integer>();
 		for (int i = 0; i < n; i++) {
 			list.add(0, this.pop());

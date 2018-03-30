@@ -28,7 +28,7 @@ public class MessageStack extends Stack<Message> {
 	 * @precondition size() > 0
 	 */
 	public ArrayList<Message> pop(int n) {
-		assert this.size() > 0;
+		assert this.size() >= n;
 		ArrayList<Message> list = new ArrayList<Message>();
 		for (int i = 0; i < n; i++) {
 			list.add(0, this.pop());
