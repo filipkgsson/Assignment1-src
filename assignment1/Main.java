@@ -5,6 +5,7 @@ import java.util.Iterator;
 public class Main {
 
 	public static void main(String[] args) {
+		/*
 		BoundedQueue<Integer> bq = new BoundedQueue<Integer>(5);
 		bq.remove();
 		bq.add(1);
@@ -21,6 +22,8 @@ public class Main {
 		Iterator<Integer> itr = bq.iterator();
 		while(itr.hasNext())
 			System.out.println(itr.next());
+	
+		*/
 		/*
 		double[][] ele = { { 1, 2 }, { 3, 4 } };
 		double[][] ele2 = { { 5, 6 }, { 7, 8 } };
@@ -31,7 +34,11 @@ public class Main {
 		System.out.println(a.multiply(b).toString());
 		*/
 		
+		MessageStack mStack = new MessageStack();
+		
+		System.out.println(mStack.size());
+		mStack.add(new Message("Hej"));
+		System.out.println(mStack.size());
 	}
 
 }
-//TEST
