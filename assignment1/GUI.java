@@ -13,8 +13,14 @@ public class GUI {
 		JButton green = new JButton("Green");
 		JButton blue = new JButton("Blue");
 		
-		circleIcon ci = new circleIcon(10.0);
-		JLabel label = new JLabel(ci);
+		CircleIcon ci = new CircleIcon(100.0);
+		final JLabel label = new JLabel();
+		label.setIcon(ci);
+		label.setOpaque(true);
+		
+		red.addActionListener(new RedListener(label, ci));
+		green.addActionListener(new GreenListener(label, ci));
+		blue.addActionListener(new BlueListener(label, ci));
 		
 		frame.setLayout(new FlowLayout());
 		frame.add(label);
@@ -24,10 +30,6 @@ public class GUI {
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.pack();
 		frame.setVisible(true);
-		label.repaint();
-
-		
-		
 	}
 	
 }

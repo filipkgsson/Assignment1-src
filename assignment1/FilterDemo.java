@@ -8,7 +8,13 @@ public class FilterDemo implements Filter{
 		else
 			return false;
 	}
-	
+	/**
+	 * Append an object at tail.
+	 * 
+	 * @param anObject
+	 *            the object to be appended
+	 * @return a new string[] containing the filtered string[]
+	 */
 	public static String[] filter(String[] a, Filter f) {
 		String[] result = new String[a.length];
 		int l = 0;
@@ -22,14 +28,5 @@ public class FilterDemo implements Filter{
 		System.arraycopy(result, 0, temp, 0, l);
 		result = temp;
 		return result;
-	}
-	
-	public static void main(String[] args) {
-		String[] a = {"Hej", "Filip", "går", "du", "på", "högskolan"};
-		Filter f = new FilterDemo();
-		String[] result = filter(a, f);
-		for(String x : result) {
-			System.out.println(x);
-		}
 	}
 }
