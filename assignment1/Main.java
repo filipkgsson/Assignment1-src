@@ -33,7 +33,8 @@ public class Main {
 
 		System.out.println(a.multiply(b).toString());
 		*/
-		
+		String[] a = new String[0];
+		System.out.println(a.length);
 		MessageStack mStack = new MessageStack();
 		
 		System.out.println(mStack.size());

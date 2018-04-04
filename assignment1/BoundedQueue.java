@@ -65,7 +65,6 @@ public class BoundedQueue<E> extends AbstractCollection<E> {
 	 *            the object to be appended
 	 * @return true since this operation modifies the queue. (This is a requirement
 	 *         of the collections framework.)
-	 * @precondition !isFull()
 	 */
 	public boolean add(E anObject) {
 		if(this.isFull()) {

@@ -27,7 +27,7 @@ public class FilterDemo implements Filter{
 	public static void main(String[] args) {
 		String[] a = {"Hej", "Filip", "går", "du", "på", "högskolan"};
 		Filter f = new FilterDemo();
-		String[] result = filter(a, f);
+		String[] result = filter(null, f);
 		for(String x : result) {
 			System.out.println(x);
 		}
