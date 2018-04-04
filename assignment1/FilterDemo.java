@@ -9,11 +9,11 @@ public class FilterDemo implements Filter{
 			return false;
 	}
 	/**
-	 * Append an object at tail.
+	 * filter the strings with the filter
 	 * 
-	 * @param anObject
-	 *            the object to be appended
-	 * @return a new string[] containing the filtered string[]
+	 * @param a String[] and a filter
+	 *            the Strings to be filtered by the filter
+	 * @return a new String[] containing the filtered string[]
 	 */
 	public static String[] filter(String[] a, Filter f) {
 		String[] result = new String[a.length];
@@ -29,16 +29,4 @@ public class FilterDemo implements Filter{
 		result = temp;
 		return result;
 	}
-<<<<<<< HEAD
-	
-	public static void main(String[] args) {
-		String[] a = {"Hej", "Filip", "går", "du", "på", "högskolan"};
-		Filter f = new FilterDemo();
-		String[] result = filter(null, f);
-		for(String x : result) {
-			System.out.println(x);
-		}
-	}
-=======
->>>>>>> 4098abd56b312d62533e22486499bae76cabddf9
 }
