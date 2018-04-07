@@ -40,6 +40,7 @@ public class Main {
 		System.out.println(mStack.size());
 		mStack.add(new Message("Hej"));
 		System.out.println(mStack.size());
+		
 	}
 
 }

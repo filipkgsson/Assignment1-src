@@ -12,7 +12,7 @@ public class MessageStack extends Stack<Message> {
 	/**
 	 * Push multiple messages.
 	 * 
-	 * @param newMessages
+	 * @param elements
 	 *            the messages to be appended
 	 */
 	public void push(int... elements) {
@@ -25,7 +25,7 @@ public class MessageStack extends Stack<Message> {
 	 * Pop multiple messages.
 	 * 
 	 * @return messages requested as an ArrayList
-	 * @precondition size() > 0
+	 * @precondition size() >= n
 	 */
 	public ArrayList<Message> pop(int n) {
 		assert this.size() >= n;

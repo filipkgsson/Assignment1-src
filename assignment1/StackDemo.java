@@ -4,16 +4,12 @@ import java.util.*;
 
 public class StackDemo extends Stack<Integer> {
 
-	/**
-	* 
-	*/
 	private static final long serialVersionUID = 1L;
 
 	/**
-	 * Append an object at head.
+	 * Append n elements at head of stack.
 	 * 
-	 * @param anObject
-	 *            the object to be appended
+	 * @param elements the elements to append
 	 */
 	public void push(int... elements) {
 		for (int e : elements) {
@@ -22,10 +18,10 @@ public class StackDemo extends Stack<Integer> {
 	}
 	
 	/**
-	 * Remove n objects at head.
+	 * Remove n objects from head.
 	 * 
 	 * @return the objects that has been removed from the queue
-	 * @precondition size() > n
+	 * @precondition size() >= n
 	 */
 	public ArrayList<Integer> pop(int n) {
 		assert this.size() >= n;

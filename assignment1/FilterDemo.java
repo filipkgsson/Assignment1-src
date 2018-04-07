@@ -2,6 +2,11 @@ package assignment1;
 
 public class FilterDemo implements Filter{
 
+	/**
+	 * Checks if the string contains 3 or more letters
+	 * @param x the string to be checked
+	 * @return If the string was 3 letters or longer
+	 */
 	public boolean accept(String x) {
 		if(x.length() <= 3)
 			return true;
