@@ -14,9 +14,10 @@ public class MessageStack extends Stack<Message> {
 	 * 
 	 * @param elements
 	 *            the messages to be appended
+	 * @postcondititon size() >= elements.length
 	 */
-	public void push(int... elements) {
-		for (int e : elements) {
+	public void push(Message... elements) {
+		for (Message e : elements) {
 			this.push(e);
 		}
 	}

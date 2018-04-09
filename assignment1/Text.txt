@@ -1,0 +1,6 @@
+3) Font, Color and URL
+
+10) When you're sorting objects that implements the comparable type you use the compareTo method
+which can be implemneted in many different ways depending on what you want to compare.
+Polymorphism gives you the ability to sort the collection in different ways because you use the same
+method.
